@@ -17,8 +17,8 @@ pipeline{
       steps{
         script{
             dir('Deployment') { 
-              checkout scm
-		    git branch: main
+              //checkout scm
+		    git branch: 'main',
 		    url: 'git@github.com:shanmugamnsw/test.git'
 		    sh "ls -lat"
 		    props = readYaml file: 'project.yaml'
