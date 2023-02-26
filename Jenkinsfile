@@ -24,7 +24,7 @@ pipeline{
 		    props = readYaml file: 'project.yaml'
 		    stash includes: "project.yaml", name: 'AppStash'
 	    }
-            first = load 'deploy.groovy' 
+            first = load '/Deployment/deploy.groovy' 
             first.runPipeline(props)   
         }
       }
