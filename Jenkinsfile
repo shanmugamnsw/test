@@ -24,8 +24,8 @@ pipeline{
 		    sh "cd /var/jenkins_home/workspace/deploy/Deployment/"
 		    props = readYaml file: 'project.yaml'
 		    stash includes: "project.yaml", name: 'AppStash'
-		    first = load'/var/jenkins_home/workspace/deploy/Deployment/deploy.groovy' 
-                    first.runPipeline(props)
+		    //first = load'/var/jenkins_home/workspace/deploy/Deployment/deploy.groovy' 
+                    //first.runPipeline(props)
 	    }
         }
       }
