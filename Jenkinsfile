@@ -20,7 +20,7 @@ pipeline{
               //checkout scm
 		    //git branch: 'main',
 		    //url: 'git@github.com:shanmugamnsw/test.git'
-		    //sh "ls -lat"
+		    sh "ls -lat"
 		    //props = readYaml file: 'project.yaml'
 		    //stash includes: "project.yaml", name: 'AppStash'
 	    }
