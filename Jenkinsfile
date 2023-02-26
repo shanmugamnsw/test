@@ -21,6 +21,7 @@ pipeline{
 		    //git branch: 'main',
 		    //url: 'git@github.com:shanmugamnsw/test.git'
 		    sh "ls -lat"
+		    sh "cd /var/jenkins_home/workspace/deploy/Deployment/"
 		    props = readYaml file: 'project.yaml'
 		    stash includes: "project.yaml", name: 'AppStash'
 	    }
