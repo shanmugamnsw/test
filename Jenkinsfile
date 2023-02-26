@@ -19,7 +19,7 @@ pipeline{
       steps{
         script{
             dir('Deployment') { 
-              //checkout scm
+              checkout scm
 		    props = readYaml file: 'project.yaml'
 		    stash includes: "project.yaml", name: 'AppStash'
 	    }
