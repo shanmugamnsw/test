@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat
   DEPLOY PIPELINE
   --------------------------------------------------------------------------------------------------------------------*/
 @NonCPS
-def runDeployPipeline(run) {
+def runPipeline(run) {
 
      
      dir('Deployment') {
